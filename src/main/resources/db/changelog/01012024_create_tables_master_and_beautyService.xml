@@ -1,0 +1,33 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="01012024_create_table_beautyService" author="Mira">
+        <sql>
+            CREATE TABLE beauty_services (
+                id BINARY(16) not null primary key,
+                name varchar(100) not null,
+                type varchar(50) not null,
+                price numeric not null
+            )
+        </sql>
+    </changeSet>
+    <changeSet id="01012024_create_table_masters" author="Mira">
+        <sql>
+            CREATE TABLE masters
+            (
+                id          BINARY(16)    not null primary key,
+                name_surname varchar(100) not null,
+                experience numeric not null
+            )
+        </sql>
+    </changeSet>
+    <changeSet id="01012024_create_table_services_masters" author="Mira">
+        <sql>
+            CREATE TABLE services_masters
+            (
+                master_id  BINARY(16) not null,
+                service_id BINARY(16) not null,
+                FOREIGN KEY (master_id)  REFERENCES masters (id),
+                FOREIGN KEY (service_id)  REFERENCES beauty_services (id)
+            )
+        </sql>
+    </changeSet>
+</databaseChangeLog>

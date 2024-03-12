@@ -1,0 +1,712 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd
+                   http://www.liquibase.org/xml/ns/dbchangelog-ext
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="01012024_insert_table_beautyServices" author="Mira">
+        <sql>
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('9168beaf9c6748d2bb4a1ff126bf5221'), 'Наращивание ресниц "Классика"', 'Ресницы', 2000);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('c5583159ebac4e82a9ce6377f0ea754c'), 'Наращивание ресниц 23D', 'Ресницы', 2500);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('948e9315b5b345138abefebb69073b4e'), 'Наращивание ресниц 45D', 'Ресницы', 2700);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('f5f75b87d2c241df904ee43af580c581'), 'Эффект мокрых ресниц', 'Ресницы', 2300);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('48b59e6c6a8245668600848a8f53a22f'), 'Изгиб M,L', 'Ресницы', 200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('11a64f30a6e74059a90cec41980efb9a'), 'Эффект стрелки', 'Ресницы', 200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('3791bb102ef54bd8941fe384ede2c136'), 'Снятие ресниц', 'Ресницы', 200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('a964b684a18d44199cdb1ad2fd0870ef'), 'Окрашивание ресниц краской', 'Ресницы', 900);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('77750ec745ff4a73a4eb3a931363bd0e'), 'Коррекция/оформление бровей', 'Брови', 1000);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('c54f33ff8e014b7f9f742b812fd8be45')
+              , 'Коррекция/оформление бровей + окрашивание хной', 'Брови', 1700);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('cb807d52db26472bbcdd01bf65c83db6')
+              ,'Коррекция/оформление бровей + окрашивание краской', 'Брови', 1700);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('f75fa07482594696a3237b7861956da1'), 'Окрашивание бровей хной', 'Брови', 900);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('57c274719597461e8aa58b582a4612f8'), 'Окрашивание/осветление бровей краской', 'Брови', 900);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170')
+              , 'Маникюр + Выравнивание + Покрытие LUXIO + Снятие', 'Маникюр', 3000);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f')
+              , 'Маникюр + Выравнивание + Покрытие ONIQ + Снятие', 'Маникюр', 2700);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b')
+              , 'Маникюр + Выравнивание + Покрытие LUXIO', 'Маникюр', 2800);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('df2502c932ca47c989023351d176b4bb')
+              ,'Маникюр + Выравнивание + Покрытие ONIQ', 'Маникюр', 2500);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea')
+              ,'Маникюр + Выравнивание + Покрытие ONIQ', 'Маникюр', 2500);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'), 'Маникюр без покрытия', 'Маникюр', 1100);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'), 'Снятие Гельлака', 'Маникюр', 500);
+
+            INSERT INTO beauty_services (id, name, type, price)
+                values(UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'), 'Ремонт 1 ногтя', 'Маникюр', 300);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'), 'Дизайн Простой', 'Маникюр', 50);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'), 'Дизайн Средний', 'Маникюр', 100);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'), 'Дизайн Сложный', 'Маникюр', 200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'), 'Донаращивание 1 ногтя', 'Наращивание ногтей', 400);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('22a657a22e42436182718f1b221cdac7')
+              , 'Наращивание + маникюр + покрытие', 'Наращивание ногтей', 5100);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'), 'Снятие нарощенных ногтей', 'Наращивание ногтей', 600);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'), 'Педикюр + Покрытие LUXIO + Снятие', 'Педикюр', 3200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'), 'Педикюр + Покрытие ONIQ + Снятие', 'Педикюр', 3000);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'), 'Педикюр + Покрытие LUXIO', 'Педикюр', 3000);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'), 'Педикюр + Покрытие ONIQ', 'Педикюр', 2800);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'), 'Педикюр без покрытия', 'Педикюр', 1800);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'), 'Ремонт 1 ногтя', 'Педикюр', 300);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'), 'Дизайн Простой', 'Педикюр', 50);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'), 'Дизайн Средний', 'Педикюр', 100);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'), 'Дизайн Сложный', 'Педикюр', 200);
+
+            INSERT INTO beauty_services (id, name, type, price)
+            values(UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'), 'Снятие Гельлака', 'Педикюр', 300);
+        </sql>
+    </changeSet>
+    <changeSet id="01012024_insert_table_masters" author="Mira">
+        <sql>
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), 'Ирина Тарасенко', 10);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), 'Светлана Латыпина', 5);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'), 'Аида Козубалаева', 8);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'), 'Елена Голосовая', 2);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'), 'Айза Азимжанова', 7);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'), 'Наталья Крутикова', 4);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'), 'Марина Кочкина', 2);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'), 'Марал Шабанова', 1);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'), 'Анара Жоошбаева', 10);
+
+            INSERT INTO masters (id, name_surname, experience)
+            values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'), 'Айя Адырова', 5);
+        </sql>
+    </changeSet>
+    <changeSet id="01012024_insert_table_services_masters" author="Mira">
+    <sql>
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), UUID_TO_BIN('77750ec745ff4a73a4eb3a931363bd0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), UUID_TO_BIN('c54f33ff8e014b7f9f742b812fd8be45'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), UUID_TO_BIN('cb807d52db26472bbcdd01bf65c83db6'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), UUID_TO_BIN('f75fa07482594696a3237b7861956da1'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('9f4e1d49494446a9894de412518a3f79'), UUID_TO_BIN('57c274719597461e8aa58b582a4612f8'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('9168beaf9c6748d2bb4a1ff126bf5221'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('c5583159ebac4e82a9ce6377f0ea754c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('948e9315b5b345138abefebb69073b4e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('f5f75b87d2c241df904ee43af580c581'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('48b59e6c6a8245668600848a8f53a22f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('11a64f30a6e74059a90cec41980efb9a'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('3791bb102ef54bd8941fe384ede2c136'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dcae59ea10b64dcf91b59172e6fc6a30'), UUID_TO_BIN('a964b684a18d44199cdb1ad2fd0870ef'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('9168beaf9c6748d2bb4a1ff126bf5221'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('c5583159ebac4e82a9ce6377f0ea754c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('948e9315b5b345138abefebb69073b4e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('f5f75b87d2c241df904ee43af580c581'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('48b59e6c6a8245668600848a8f53a22f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('11a64f30a6e74059a90cec41980efb9a'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('3791bb102ef54bd8941fe384ede2c136'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('af3190d7fe6148a196e13c0547dd9bba'),UUID_TO_BIN('a964b684a18d44199cdb1ad2fd0870ef'));
+
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( '9168beaf9c6748d2bb4a1ff126bf5221'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( 'c5583159ebac4e82a9ce6377f0ea754c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( '948e9315b5b345138abefebb69073b4e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( 'f5f75b87d2c241df904ee43af580c581'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( '48b59e6c6a8245668600848a8f53a22f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( '11a64f30a6e74059a90cec41980efb9a'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( '3791bb102ef54bd8941fe384ede2c136'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('859ebe09e9774a33bb35ade85df41206'),UUID_TO_BIN( 'a964b684a18d44199cdb1ad2fd0870ef'));
+
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('cb7ca8f10bc04572aeac7e8e113c080e'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('d274f7405ba74dad9e1f3933d0b770d4'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('dc5df8152476409cad689335490bdfde'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('1595eb5ee2de44af8536d944adc0b6fc'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('5bf89c9aa5074b7b8e0e22fde12f09f2'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('f58e7041a2c443768696a30eaeaa9170'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('884cdd0b399f48ffbcbb32d5aa609e5f'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('ff2d13e8038840cbabbef6c54f36513b'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('df2502c932ca47c989023351d176b4bb'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('694aa2d0276146479bac8891e6c657ea'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('dffe30f656044028a953f57461bf5ee8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('6044564ad33d4e658c6a2ca13343a0b2'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('11885d4fa9b84b13b6325279aeaf9dd0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('f1bb5450a00740c4bacfdf5af058a1af'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('2c5e66f9a95748e6b58efc0a0ad7cc91'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('24252900a0394fdeba4330cd0ae52cd0'));
+
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('4badbe4e62fb4ec0961c2f73c9b6b4d8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('22a657a22e42436182718f1b221cdac7'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('2eedf14fc7ee401f847606561c274d0e'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('9d6cf12878ce437fb2bb8bf7960bd06c'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('65b8e5ed47d7458980295231f5a8fef8'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('fe6a16b8eb354ceeb60f929c70e45e24'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('af68e8298a904b2e9826dd9ec9d7d8db'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('d4c2dcb15e5b4e598a351014051a7205'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('72405cd5f6f54ee987394a4b9c63abc0'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('a72c86e8f01147068bf83fe8932bc159'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('2ddd7d0bcb7748febf9b86173add7d5d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('2fd416939def42e1a27786ebf86f1a6d'));
+
+        INSERT INTO services_masters (master_id, service_id)
+        values(UUID_TO_BIN('71c8810c3d2f44bcbbe52d12600f3216'),UUID_TO_BIN('da810b7be5f8413bbd3fa20bc17a0a80'));
+    </sql>
+    </changeSet>
+</databaseChangeLog>
